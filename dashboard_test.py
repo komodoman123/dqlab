@@ -27,7 +27,7 @@ with col1:
 	st.image(image)
 	tombol1=st.button("pilih spiderman 3")
 	if tombol1==True:
-	 st.write('Salah, ROI dari spiderman 3 adalah 300%')
+	 st.write('Salah')
 	else:
 	 st.write('')
 with col2:
@@ -36,7 +36,7 @@ with col2:
 	st.image(image)
 	tombol2=st.button("pilih Shrek the third")
 	if tombol2==True:
-	 st.write('Salah, ROI dari shrek the third adalah 500%')
+	 st.write('Salah')
 	else:
 	 st.write('')
 with col3:
@@ -45,7 +45,7 @@ with col3:
 	st.image(image)
 	tombol3=st.button("pilih Paranormal Activity")
 	if tombol3==True:
-	 st.write('Betul, Paranormal Activity memiliki ROI sebesar 42000%')
+	 st.write('Betul')
 	else:
 	 st.write('')
 
