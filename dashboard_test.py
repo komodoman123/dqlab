@@ -76,7 +76,7 @@ ax2.legend(ncol = 2, loc = 'lower right')
 sns.despine(left = True, bottom = True)
 st.pyplot(fig2)
 
-st.write("Film dengan budget tertinggi pada dataset ini merupakan Pirates of the Carribean: on Stranger Tides, yang membutuhkan 380 juta us dolla untuk diproduksi," 
+st.write("Film dengan budget tertinggi pada dataset ini merupakan Pirates of the Carribean: on Stranger Tides, yang membutuhkan 380 juta us dollar untuk diproduksi," 
 " tapi biaya tersebut terbayarkan, karena film tersebut mendapatkan 1 miliar us dollar. di sisi lain The Lone Ranger mendapatkan 90 juta dollar dari biaya produksi sebesar 255 juta dollar."
 " Sehingga budget besar tidak selalu berarti pendapatan besar. Film mana yang memiliki revenue paling tinggi?") 
 
