@@ -15,7 +15,7 @@ st.write("Saya merasa heran karena selama ini Hollywood menilai atau menyiarkan 
 " Contoh pada 2007, misalnya, di mana film terlaris pada tahun tersebut adalah Pirates Of The Caribbean: At Worlds End." )
 image = Image.open("imgs/poc_awe.jpg")
 st.image(image)
-st.write("Dengan keuntungan sebesar 9.6 milliar dollar yang ternyata hanya memulihkan 320% dari budget sebesar 300 juta dollar." 
+st.write("Dengan keuntungan sebesar 960 juta dollar yang ternyata hanya memulihkan 320% dari budget sebesar 300 juta dollar." 
 " Tapi jika dilihat dari profitability, untuk film tahun 2007, manakah yang paling menguntungkan, bisakah anda menebak: ")
 
 st.header("Most profitable on 2007")
