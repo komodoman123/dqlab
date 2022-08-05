@@ -9,7 +9,7 @@ st.title("Hollywood's most profitable stories")
 
 st.header("Introduction")
 st.write("Saya merasa heran karena selama ini Hollywood menilai atau menyiarkan kesuksesan sebuah film dengan pendapatan kotor. "
-"Bagaimana dengan Profitabilitas, atau % dari anggaran yang dipulihkan? "
+"Bagaimana dengan Profitabilitas atau % dari anggaran yang dipulihkan? "
 "Terutama di Amerika, di mana setiap film memiliki biaya marketing tidak yang kalah tinggi dengan biaya produksi."
 " Jika kita menggunakan profitabilitas sebagai indeks, hasil yang ditunjukkan sangat berbeda." 
 " Contoh pada 2007, misalnya, di mana film terlaris pada tahun tersebut adalah Pirates Of The Caribbean: At Worlds End." )
