@@ -103,7 +103,6 @@ st.write("Berikut merupakan film dengan ROI(revenue/budget)tertinggi pada datase
 top1=df[['title','budget','revenue','prof']]
 top_prob=top1.sort_values(by=['prof'],ascending=False)
 p=top_prob.head(20)
-st.dataframe(p)
 fig4, ax4 = plt.subplots(figsize = (10,10))
 sns.set_color_codes('muted')
 sns.barplot(x = 'prof', y = 'title', data = p,
