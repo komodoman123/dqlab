@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import ast
 from PIL import Image
 
 st.title("Hollywood's most profitable stories")
@@ -9,8 +10,8 @@ st.title("Hollywood's most profitable stories")
 st.header("Introduction")
 st.write("Saya merasa heran karena selama ini Hollywood menilai atau menyiarkan kesuksesan sebuah film dengan pendapatan kotor. "
 "Bagaimana dengan Profitabilitas, atau % dari anggaran yang dipulihkan? "
-"Terutama di Amerika, di mana setiap film memiliki biaya marketing yang tidak kalah tinggi, menurut studiobinder biaya marketing film besar bisa mencapai setengah dari biaya produksi"
-" Jika kita menggunakan profitabilitas sebagai indeks, hasil yang ditunjukkan sangat berbeda." 
+"Terutama di Amerika, di mana setiap film memiliki biaya marketing tidak kalah tinggi, menurut studiobinder biaya marketing film besar bisa mencapai setengah dari biaya produksi"
+"Jika kita menggunakan profitabilitas sebagai indeks, hasil yang ditunjukkan sangat berbeda." 
 "Contoh pada 2007, misalnya, di mana film terlaris pada tahun tersebut adalah Pirates Of The Caribbean: At Worlds End." )
 image = Image.open("imgs/poc_awe.jpg")
 st.image(image)
@@ -103,6 +104,7 @@ st.write("Berikut merupakan film dengan ROI(revenue/budget)tertinggi pada datase
 top1=df[['title','budget','revenue','prof']]
 top_prob=top1.sort_values(by=['prof'],ascending=False)
 p=top_prob.head(20)
+st.dataframe(p)
 fig4, ax4 = plt.subplots(figsize = (10,10))
 sns.set_color_codes('muted')
 sns.barplot(x = 'prof', y = 'title', data = p,
@@ -113,3 +115,33 @@ sns.despine(left = True, bottom = True)
 st.pyplot(fig4)
 
 st.write("The Blair Witch Project menempati posisi pertama, perlu diperhatikan juga beberapa film pada chart ini merupakan film horror, sepertinya film horror tidak mahal untuk dibuat dan terkadang menjadi cult classic dan memiliki banyak penggemar")
+
+def convert(obj):
+    L = []
+    for i in ast.literal_eval(obj):
+        L.append(i['name'])
+    return L
+df['genres'] = df['genres'].apply(convert)
+#=======================================================================
+st.header("Genre")
+st.write("Rata-rata revenue berdasarkan genre")
+image = Image.open("imgs/p3.png")
+st.image(image)
+st.write("Rata-rata budget berdasarkan genre")
+image = Image.open("imgs/p2.png")
+st.image(image)
+st.write("Rata-rata ROI berdasarkan genre")
+image = Image.open("imgs/p1.png")
+st.image(image)
+st.write("ROI memang cukup tinggi untuk horror namun genre tersebut bukan genre safe yang mungkin ditunjukkan oleh rata-rata, dikarenakan oleh outlier seperti blair witch")
+st.write("Secara umum, film yang menghasilkan revenue terbesar adalah film dengan budget yang signifikan, tetapi umumnya bukan yang paling banyak menghasilkan ROI. ")
+st.write("Namun outlier seperti The Blair Witch Project bisa melawan tren dan menunjukkan bahwa film dengan budget yang lebih rendah dapat sukses besar dalam situasi yang tepat, sementara The Lone Ranger menunjukkan bahwa film dengan budget yang lebih tinggi masih bisa gagal.")
+
+
+
+
+
+
+
+
+
