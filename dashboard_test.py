@@ -133,7 +133,7 @@ st.image(image)
 st.write("Rata-rata ROI berdasarkan genre")
 image = Image.open("imgs/p1.png")
 st.image(image)
-st.write("ROI memang cukup tinggi untuk horror namun genre tersebut bukan genre safe yang mungkin ditunjukkan oleh rata-rata, dikarenakan oleh outlier seperti blair witch")
+st.write("ROI memang cukup tinggi untuk horror namun genre tersebut bukan genre safe yang mungkin ditunjukkan oleh rata-rata, dikarenakan oleh outlier seperti blair witch. Meskipun blair witch memiliki ROI ratus ribuan persen, reveneu yang dihasilkan masih kurang dari 1 miliar dollar ")
 st.write("Secara umum, film yang menghasilkan revenue terbesar adalah film dengan budget yang signifikan, tetapi umumnya bukan yang paling banyak menghasilkan ROI. ")
 st.write("Namun outlier seperti The Blair Witch Project bisa melawan tren dan menunjukkan bahwa film dengan budget yang lebih rendah dapat sukses besar dalam situasi yang tepat, sementara The Lone Ranger menunjukkan bahwa film dengan budget yang lebih tinggi masih bisa gagal.")
 
