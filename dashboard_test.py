@@ -125,7 +125,7 @@ st.write("Yet outliers such as The Blair Witch Project buck the trend and demons
 st.write("Horror is on the top of ROI, and if we refer to the highest ROI chart, most of them are horror movies, it seems that they’re cheap to make and sometimes become cult classics.")
 st.write("In fact, one of the production studio, blumhouse productions is adopting this strategy.")
 st.write("they threw a few million dollars at each of these movies so they don't even need to have a huge hit for it to be profitable.")
-image = Image.open("imgs/blum.png")
+image = Image.open("imgs/blum.jpg")
 st.image(image)
 st.write("And sometimes they do get a huge hit, aside from Paranormal Activity for example, blumhouse's insidious series, which im sure everyone is familiar with. Started with only a budget of \$1.5 million has now reached $539.4 million accross 4 movies with a fifth one in the making ")
 image = Image.open("imgs/insidious.jpg")
