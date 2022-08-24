@@ -9,7 +9,7 @@ st.title("Hollywood's most profitable stories")
 
 st.header("Introduction")
 st.write("Hollywood always grades or broadcasts the success of a film by their gross income." 
-	" What if we look at it from the angle of Profitability, or % of Budget Recovered? Especially considering that hollywood film has such high printing and advertising costs,"
+	" What if we look at it from the angle of Profitability or % of Budget Recovered? Especially considering that hollywood film has such high printing and advertising costs,"
 	" if you use Profitability as an index, it changes the view considerably." 
 	" Take 2007, for example, where the biggest grossing film was Pirates Of The Caribbean: At Worlds End." )
 image = Image.open("imgs/poc_awe.jpg")
